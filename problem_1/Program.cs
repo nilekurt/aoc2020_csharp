@@ -89,7 +89,7 @@ namespace problem_1
             }
             else
             {
-                var product = result.Select((x) => { return (UInt64)x; }).Aggregate((x, y) => { return x * y; });
+                var product = result.Select(x => (UInt64)x).Aggregate((x, y) => x * y);
                 Console.WriteLine(product);
             }
 
